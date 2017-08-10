@@ -17,13 +17,13 @@ if [ $(dpkg-query -W -f='${Status}' python2.7-dev 2>/dev/null | grep -c "ok inst
 else
     echo "---python2.7-dev already installed"
 fi
-if [ $(pip list 2>/dev/null | grep -c "blinkstick") -eq 0 ]; then
+if [ $(pydoc modules | grep -c "blinkstick") -eq 0 ]; then
     pip install blinkstick;
 	echo "---blinkstick python module installed"
 else
     echo "---blickstick python module already installed."
 fi
-if [ $(pip list 2>/dev/null | grep -c "psutil") -eq 0 ]; then
+if [ $(pydoc modules | grep -c "psutil") -eq 0 ]; then
     pip install psutil;
 else
     echo "---psutil python system monitor already installed."
