@@ -29,8 +29,8 @@ import time
 # Deafults
 LOG_FILENAME = "/tmp/blinktemp.log"
 LOG_LEVEL = logging.INFO
-temp_base = 32
-throttle_limit = 80
+temp_base = 40
+throttle_limit = 79
 
 # Commandline, argsparse, logger creditz:
 #   http://blog.scphillips.com/posts/2013/07/getting-a-python-script-to-run-in-the-background-as-a-service-on-boot/
@@ -114,7 +114,7 @@ else:
     #go into a forever loop
     while True:
         temperature = getCPUtemperature()
-        if float(temperature) > float(throttle_limit + 1):
+        if float(temperature) >= float(throttle_limit):
             # flash a warning indicator at you
             blink_state = not blink_state
             if not blink_state:
