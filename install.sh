@@ -46,3 +46,4 @@ chmod 755 /etc/init.d/$SCRIPTNAME.sh
 echo "--adjusted permissions $SCRIPTNAME.sh"
 update-rc.d $SCRIPTNAME.sh defaults
 echo "--service $SCRIPTNAME installed"
+/etc/init.d/$SCRIPTNAME.sh start
