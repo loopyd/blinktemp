@@ -22,9 +22,9 @@ Python Daemon for Raspberry Pi
 
     ```sudo systemctl stop blinktemp```
 
-    Next, open ``blinktemp.sh``` in a text editor, like so:
+    Next, open ``blinktemp.sh`` in a text editor, like so:
 
-       nano ./blinktemp.sh
+    ```nano ./blinktemp.sh```
 
     from your download directory.  Make a few changes to DAEMON_OPTS:
 
@@ -35,6 +35,6 @@ Python Daemon for Raspberry Pi
 
     **Example:**
 
-        ```DAEMON_OPTS="-tb 32 -tl 79"
+        ```DAEMON_OPTS="-tb 32 -tl 79"```
 
     Now run ```sudo ./install.sh``` again to re-install, update, and restart the service.  
