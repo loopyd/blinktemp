@@ -1,9 +1,8 @@
 BLINKTEMP
 --------------------
 **Visual CPU Temperature indicator**
-------
-Python Daemon for Raspberry Pi
-------
+*Python Daemon for Raspberry Pi*
+
 1.  Clone it
 2.  Run install.sh as the superuser
 3.  Reboot your Raspberry Pi
