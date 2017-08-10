@@ -35,6 +35,6 @@ Python Daemon for Raspberry Pi
 
     **Example:**
 
-        ```DAEMON_OPTS="-tb 32 -tl 79"```
+    ```DAEMON_OPTS="-tb 32 -tl 79"```
 
     Now run ```sudo ./install.sh``` again to re-install, update, and restart the service.  
