@@ -48,7 +48,7 @@ if args.log:
 if args.tempbase:
         temp_base = int(args.tempbase)
 if args.throttlelimit:
-        throttle_limit = int(args.throttle_limit)
+        throttle_limit = int(args.throttlelimit)
 ##END argsparse
         
 ##BEGIN loggersetup

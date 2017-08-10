@@ -16,7 +16,7 @@
 DIR=/usr/local/bin/blinktemp
 DAEMON=$DIR/blinktemp.py
 DAEMON_NAME=blinktemp
-DAEMON_OPTS=""
+DAEMON_OPTS="-tl 79"
 DAEMON_USER=root
 PIDFILE=/var/run/$DAEMON_NAME.pid
 
